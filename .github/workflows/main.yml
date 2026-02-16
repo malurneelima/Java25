@@ -2,7 +2,7 @@ name: main-pipeline
 
 on:
   pull_request:
-    workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   main:
@@ -11,5 +11,3 @@ jobs:
     secrets: inherit
     with:
       skip-codeql-step: false
-      
-  
