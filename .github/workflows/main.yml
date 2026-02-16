@@ -7,7 +7,7 @@ on:
 jobs:
   main:
     if: github.actor != 'dependabot[bot]'
-    uses: malurneelima/ci-workflow/.github/workflows/java-workflow.yaml@v1
+    uses: malurneelima/ci-workflow/.github/workflows/java-workflow.yaml@main
     secrets: inherit
     with:
       skip-codeql-step: false
