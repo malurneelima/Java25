@@ -1,0 +1,15 @@
+name: main-pipeline
+
+on:
+  pull_request:
+    workflow_dispatch:
+
+jobs:
+  main:
+    if: github.actor != 'dependabot[bot]'
+    uses: reusable/ci-workflow/.github/workflows/java-workflow.yaml
+    secrets: inherit
+    with:
+      skip-codeql-step: false
+      
+  
